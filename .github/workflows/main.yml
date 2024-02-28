@@ -22,6 +22,7 @@ jobs:
         run: |
           # Here you can add any script or command to modify your README.md file
           echo "This is an automated commit." >> README.md
+          echo "Last update: $(date)" >> README.md
 
       - name: Commit changes
         run: |
