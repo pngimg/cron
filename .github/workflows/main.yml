@@ -20,7 +20,9 @@ jobs:
 
       - name: Modify README.md
         run: |
-          # Here you can add any script or command to modify your README.md file
+          # Truncate README.md to remove all existing content
+          echo "" > README.md
+          # Add new content to README.md
           echo "This is an automated commit." >> README.md
           echo "Last update: $(date)" >> README.md
 
